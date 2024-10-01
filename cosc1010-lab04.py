@@ -1,8 +1,8 @@
-# Your Name Here
+# Jayden Robison
 # UWYO COSC 1010
-# Submission Date
-# Lab 03 
-# Lab Section: 
+# October 1, 2024
+# Lab 04 
+# Lab Section: 10
 # Sources, people worked with, help given to: 
 # your
 # comments
@@ -102,4 +102,23 @@ min_temps = [
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
 
+count = 0
+num = 0
 
+min_min=min_temps[0]
+max_max=max_temps[0]
+for i in range (0,len(min_temps)):
+    if min_temps[i]<min_min:
+        min_min=min_temps[i]
+    if max_temps[i]>max_max:
+        max_max= max_temps[i]
+    count = count + max_temps[i]
+    num = num + min_temps[i]
+    avg_max = count/len(max_temps)
+    avg_min = num/len(min_temps)
+
+
+print(avg_max)
+print(avg_min)
+print(max_max)
+print(min_min)
